@@ -1,25 +1,8 @@
 {%extends "layout.html"%}
-  <title>{%block title%}home{%end block%}</title>
-  
-  </head>
-  <body>
-    <!--nav bar-->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href=".">My Website</a>
-        </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href=".">Home</a></li>
-            <li><a href="/ItsYaBoi">Page 1</a></li> <!-- p1 will show up in the url -->
-            <li><a href="/p2">Page 2</a></li>
-          </ul>
-      </div>
-    </nav>
-    
-    <!--page content-->
+  {%block title%}home{%end block%}
+  {%block content%}
     <h1>Home Page</h1>
-    
+  {%end block%}
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
