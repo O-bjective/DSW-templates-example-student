@@ -22,9 +22,9 @@
           <a class="navbar-brand" href=".">My Website</a>
         </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href=".">Home</a></li>
-            <li><a href="/ItsYaBoi">Page 1</a></li> <!-- p1 will show up in the url -->
-            <li><a href="/p2">Page 2</a></li>
+            <li {%if active_page == "home"%} class="active"{%endif%}><a href=".">Home</a></li>
+            <li{%if active_page == "page1"%} class="active"><a href="/ItsYaBoi">Page 1</a></li> <!-- p1 will show up in the url -->
+            <li{%if active_page == "page2"%} class="active"><a href="/p2">Page 2</a></li>
           </ul>
       </div>
     </nav>
